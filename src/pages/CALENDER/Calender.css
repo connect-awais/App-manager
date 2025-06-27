@@ -1,0 +1,86 @@
+/* src/components/Calendar.css */
+.calendar-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+.calendar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 20px 25px;
+    margin: 20px 10px;
+  }
+
+  .calendar-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .fc .fc-toolbar.fc-header-toolbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .fc .fc-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fc .fc-button-group > .fc-button {
+    margin: 4px;
+    flex-grow: 1;
+  }
+}
+
+/* FullCalendar Styling */
+.fc .fc-toolbar-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+.fc-button {
+  background-color: #1e3a8a !important;
+  border: none !important;
+  color: white !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.fc-button:hover {
+  background-color: #1e40af !important;
+}
+
+.fc-button-primary:not(:disabled).fc-button-active,
+.fc-button-primary:not(:disabled):active {
+  background-color: #1e40af !important;
+}
+
+.fc-day-today {
+  background-color: #fff9db !important;
+}
+
+.fc .fc-button-group > .fc-button {
+  margin-right: 8px;
+}
+
+.fc .fc-button-group > .fc-button:last-child {
+  margin-right: 0;
+}
