@@ -12,10 +12,10 @@ const Navbar = () => {
         </div>
 
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-            <Link to="/">Home</Link>
-            <Link to="/Calender">Calender</Link>
-            <Link to="/Login">Login</Link>
-            <Link to="/Register">Register</Link>
+            <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/Calender" onClick={() => setIsOpen(false)}>Calender</Link>
+            <Link to="/Login" onClick={() => setIsOpen(false)}>Login</Link>
+            <Link to="/Register" onClick={() => setIsOpen(false)}>Register</Link>
         </div>
 
         <div
